@@ -4,11 +4,12 @@ Self-hosted changelog powered by [Openchangelog](https://openchangelog.com), dep
 
 ## How it works
 
-- `docker-compose.yml` — runs `ghcr.io/jonashiltl/openchangelog`, mounting the two files below (read-only).
-- `openchangelog.yml` — site config (title, color scheme, etc.). Served at container `/etc/openchangelog.yml`.
-- `release-notes/` — one Markdown file per release. Mounted at container `/release-notes`.
+- `Dockerfile` — extends `ghcr.io/jonashiltl/openchangelog` and `COPY`s the config + release notes into the image. (Coolify rewrites compose bind-mounts to its own storage paths, so the content is baked into the image instead of mounted at runtime.)
+- `docker-compose.yml` — builds the image above and exposes port 6001.
+- `openchangelog.yml` — site config (title, color scheme, etc.). Lands at container `/etc/openchangelog.yml`.
+- `release-notes/` — one Markdown file per release. Lands at container `/release-notes`.
 
-No database. State is this repo.
+No database. State is this repo — every change ships by rebuilding the image.
 
 ## Adding a release note
 

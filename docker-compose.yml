@@ -1,9 +1,7 @@
 services:
   openchangelog:
-    image: "ghcr.io/jonashiltl/openchangelog:0.6.2"
+    build:
+      context: .
     restart: unless-stopped
     expose:
       - "6001"
-    volumes:
-      - ./openchangelog.yml:/etc/openchangelog.yml:ro
-      - ./release-notes:/release-notes:ro
