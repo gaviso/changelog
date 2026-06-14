@@ -9,7 +9,7 @@ page:
   colorScheme: light
   hidePoweredBy: true
   logo:
-    src: https://cdn.jsdelivr.net/gh/gaviso/gaviso-one-membership-changelog@main/assets/gaviso-one-logo.png
+    src: https://cdn.jsdelivr.net/gh/gaviso/openchangelog@main/membership/assets/gaviso-one-logo.png
     width: 227px
     height: 30px
     link: https://membership.gaviso.one

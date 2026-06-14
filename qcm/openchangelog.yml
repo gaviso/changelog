@@ -1,0 +1,16 @@
+addr: 0.0.0.0:6001
+local:
+  filesPath: /release-notes
+cache:
+  type: memory
+page:
+  title: Gaviso QCM
+  subtitle: Quote → contract → renewal — what's new
+  colorScheme: light
+  hidePoweredBy: true
+  logo:
+    src: https://cdn.jsdelivr.net/gh/gaviso/openchangelog@main/qcm/assets/qcm-logo.png
+    width: 137px
+    height: 32px
+    link: https://qcm.gaviso.agency
+    alt: Gaviso QCM
