@@ -8,3 +8,9 @@ page:
   subtitle: The latest updates and improvements
   colorScheme: system
   hidePoweredBy: true
+  logo:
+    src: https://cdn.jsdelivr.net/gh/gaviso/changelog@main/assets/gaviso-one-logo.png
+    width: 227px
+    height: 30px
+    link: https://membership.gaviso.one
+    alt: Gaviso One
