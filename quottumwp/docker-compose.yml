@@ -1,0 +1,13 @@
+services:
+  openchangelog:
+    build:
+      context: .
+    restart: unless-stopped
+    expose:
+      - "6001"
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1:6001/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s

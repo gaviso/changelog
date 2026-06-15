@@ -1,0 +1,10 @@
+addr: 0.0.0.0:6001
+local:
+  filesPath: /release-notes
+cache:
+  type: memory
+page:
+  title: Quottum for WordPress
+  subtitle: Plugin updates and release notes
+  colorScheme: light
+  hidePoweredBy: true
